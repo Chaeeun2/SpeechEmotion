@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html lang="ko" style="width: 100%;">
+
+<head>
+    <title>SpeechToEmotion</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.2.0/addons/p5.sound.min.js"></script>
+    <link href="styles.css" rel="stylesheet">
+    <!-- Socket.io 연동 -->
+    <script src="https://cdn.socket.io/socket.io-2.3.1.js"></script>
+    <style>
+        @import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+    </style>
+</head>
+
+<body>
+    <div style="height:100vh; position:fixed; top:0; right:0; z-index:99; width:40vw; text-align:right;">
+        <button class="btn">행복</button>
+        <button class="btn">기쁨</button>
+        <button class="btn">사랑</button>
+        <button class="btn">귀여움</button>
+        <button class="btn">평화</button>
+        <button class="btn">신남</button>
+        <button class="btn">감동</button>
+        <button class="btn">감사</button>
+        <button class="btn">흐뭇</button>
+        <button class="btn">편안</button>
+        <button class="btn">정겨움</button>
+        <button class="btn">웃김</button>
+        <button class="btn">슬픔</button>
+        <button class="btn">분노</button>
+        <button class="btn">우울</button>
+        <button class="btn">불안</button>
+        <button class="btn">불쾌</button>
+        <button class="btn">죄송</button>
+        <button class="btn">공포</button>
+        <button class="btn">짜증</button>
+        <button class="btn">창피</button>
+        <button class="btn">부담</button>
+        <button class="btn">당황</button>
+        <button class="btn">허무</button>
+        <br>
+        <button class="play">play</button>
+    </div>
+
+    <!--<div style="position:fixed;top:0;">
+        <div style="height:100vh; z-index:99; width:100vw; display:flex; align-items: center; pointer-events: none;">
+            <hr style="border: 3px solid white; width: 100%">
+        </div>
+    </div>-->
+
+    <div>
+        <div class="score score1">
+            <div style="margin-left:50px;">
+                <!-- <hr class="line1 lahr">
+                <img src="resource/svg1.svg" class="scoresvg do">
+                <img src="resource/svg1.svg" class="scoresvg re">
+                <img src="resource/svg1.svg" class="scoresvg mi">
+                <img src="resource/svg1.svg" class="scoresvg fa">
+                <img src="resource/svg1.svg" class="scoresvg sol">
+                <img src="resource/svg1.svg" class="scoresvg la">
+                <img src="resource/svg1.svg" class="scoresvg si">
+                <img src="resource/svg1.svg" class="scoresvg do2">-->
+            </div>
+        </div>
+    </div>
+    <!--<div class="words">
+    </div>-->
+    <div class="words">
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

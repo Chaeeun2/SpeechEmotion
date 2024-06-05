@@ -1,0 +1,247 @@
+html {
+    background: black;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+p {
+    font-family: 'Pretendard';
+    margin: 0;
+    padding: 0px 3px 3px 3px;
+    font-weight: 600;
+}
+
+.scoresvg {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation-duration: 0.5s;
+    animation-name: score;
+    transition: 0.5s;
+    background: rgb(255, 255, 255);
+    border-radius: 200px;
+    /*mix-blend-mode: exclusion;*/
+    mix-blend-mode: color-burn;
+}
+
+.scoresvg2 {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    animation-duration: 1s;
+    animation-name: score;
+    transition: 1s;
+    border: rgb(255, 255, 255);
+    border-radius: 200px;
+    margin-top: -10px;
+}
+
+@keyframes score {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.score {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    isolation: isolate;
+}
+
+.line1,
+.line2,
+.line3 {
+    border: 0.5px solid white;
+    width: 0px !important;
+    position: absolute;
+    margin: 0;
+    transition: 1s;
+    display: none;
+}
+
+
+.dohr {
+    height: 31vh;
+    top: 50%;
+    animation-duration: 1s;
+    animation-name: dohr;
+}
+
+@keyframes dohr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 31vh;
+    }
+}
+
+.rehr {
+    height: 21vh;
+    top: 50%;
+    animation-duration: 1.5s;
+    animation-name: rehr;
+}
+
+@keyframes rehr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 21vh;
+    }
+}
+
+.mihr {
+    height: 11vh;
+    top: 50%;
+    animation-duration: 1.5s;
+    animation-name: mihr;
+}
+
+@keyframes mihr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 11vh;
+    }
+}
+
+.fahr {
+    height: 1vh;
+    top: 50%;
+    animation-duration: 1.5s;
+    animation-name: fahr;
+}
+
+@keyframes fahr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 1vh;
+    }
+}
+
+.solhr {
+    rotate: (180deg);
+    height: 9vh;
+    top: calc(50% - 9vh);
+    animation-duration: 1.5s;
+    animation-name: solhr;
+}
+
+@keyframes solhr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 9vh;
+    }
+}
+
+.lahr {
+    rotate: (180deg);
+    height: 19vh;
+    top: calc(50% - 19vh);
+    animation-duration: 1.5s;
+    animation-name: lahr;
+}
+
+@keyframes lahr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 19vh;
+    }
+}
+
+.sihr {
+    rotate: (180deg);
+    height: 29vh;
+    top: calc(50% - 29vh);
+    animation-duration: 1.5s;
+    animation-name: sihr;
+}
+
+@keyframes sihr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 29vh;
+    }
+}
+
+.do2hr {
+    rotate: (180deg);
+    height: 39vh;
+    top: calc(50% - 39vh);
+    animation-duration: 1.5s;
+    animation-name: do2hr;
+}
+
+@keyframes do2hr {
+    from {
+        height: 0;
+    }
+
+    to {
+        height: 39vh;
+    }
+}
+
+
+
+.do {
+    top: 80vh;
+}
+
+.re {
+    top: 70vh;
+}
+
+.mi {
+    top: 60vh;
+}
+
+.fa {
+    top: 50vh;
+}
+
+.sol {
+    top: 40vh;
+}
+
+.la {
+    top: 30vh;
+}
+
+.si {
+    top: 20vh;
+}
+
+.do2 {
+    top: 10vh;
+}
